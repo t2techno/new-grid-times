@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { COLORS } from "../../constants";
+import { COLORS, QUERIES } from "../../constants";
 
 const SecondaryStory = ({
   id,
@@ -36,9 +36,19 @@ const Wrapper = styled.article`
   grid-template-areas:
     "image heading"
     "image abstract";
+
   gap: 4px 16px;
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
+
+  @media (${QUERIES.tabletOnly}) {
+    grid-template-areas:
+      "image"
+      "heading"
+      "abstract";
+
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Image = styled.img`
