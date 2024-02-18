@@ -24,6 +24,12 @@ const Anchor = styled.a`
     border: none;
     padding-bottom: 0;
   }
+  max-width: calc(172 / 16) rem;
+
+  @media (${QUERIES.tabletOnly}) {
+    border: none;
+    padding-bottom: 0;
+  }
 `;
 
 const Wrapper = styled.article`
