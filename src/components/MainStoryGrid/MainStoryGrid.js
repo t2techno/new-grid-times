@@ -54,7 +54,7 @@ const Wrapper = styled.div`
       "advertisement advertisement"
       "opinion-stories opinion-stories";
 
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 35%;
   }
   gap: 48px;
   margin-bottom: 48px;
